@@ -37,6 +37,9 @@
   align-items: center;
   margin-top: 11%;
 }
+.content {
+  visibility: hidden;
+}
 .content h1,
 .content p,
 .content h3 {
@@ -67,6 +70,7 @@
   margin-top: -20px;
 }
 .photo {
+  visibility: hidden;
   box-shadow: rgba(196, 196, 196, 0.25) 0px 34px 55px,
     rgba(196, 196, 196, 0.12) 0px -12px 30px,
     rgba(196, 196, 196, 0.12) 0px 4px 6px,

@@ -3,7 +3,6 @@ import {
   domAnimation, LazyMotion,
   m
 } from "framer-motion"
-import { useState } from "react"
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps, router }) {
