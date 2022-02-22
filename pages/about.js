@@ -1,4 +1,6 @@
 import Head from 'next/head'
+
+import IntroContent from '../components/IntroContent'
 import Video from '../components/Video'
 import styles from '../styles/About.module.css'
 
@@ -10,7 +12,8 @@ const about = () => {
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
             </Head>
             <Video />
-        </div >
+            <IntroContent />
+        </div>
     )
 }
 
