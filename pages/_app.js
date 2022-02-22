@@ -7,13 +7,10 @@ import { useState } from "react"
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps, router }) {
-  const [exitBefore, setExitBefore] = useState(false);
-
-  console.log('exit before ', exitBefore)
 
   return (<div className="app-wrap">
     <LazyMotion features={domAnimation}>
-      <AnimatePresence>
+      <AnimatePresence initial={false}>
         <m.div
           key={router.route}
           className="page-wrap"
