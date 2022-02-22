@@ -13,3 +13,10 @@ a {
   padding: 0;
   margin: 0;
 }
+
+.page-wrap {
+  display: flex;
+  position: absolute;
+  height: 100%;
+  width: 100vw;
+}

@@ -1,9 +1,14 @@
 import Link from 'next/link'
+import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Prateek Niket</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Link href="/about">
         <div id={styles.logo} className='svg-container'>
           <svg width="652" height="101" viewBox="0 0 652 101" fill="none" xmlns="http://www.w3.org/2000/svg">
