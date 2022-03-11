@@ -5,6 +5,7 @@ body {
   background-color: #343434;
   overflow-x: hidden;
   font-family: "Rubik", sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
