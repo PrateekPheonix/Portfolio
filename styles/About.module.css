@@ -114,3 +114,33 @@
 .photo span {
   display: block !important;
 }
+
+@media screen and (max-width: 480px) {
+  .contentContainer {
+    margin-top: 30%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content {
+    order: 2;
+    width: 60%;
+  }
+
+  .content h1 {
+    font-size: 36px;
+  }
+
+  .content p {
+    font-size: 18px;
+    margin-bottom: 14%;
+  }
+  .ref {
+    font-size: 18px !important;
+    margin-top: -6px;
+  }
+  .photo {
+    width: 60%;
+    order: 1;
+    margin-bottom: 14%;
+  }
+}

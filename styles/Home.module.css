@@ -81,3 +81,15 @@
     fill: #01f9c6;
   }
 }
+
+@media screen and (max-width: 480px) {
+  #logo {
+    transform: translate(-70%, -50%);
+  }
+  #logo svg {
+    width: 150%;
+  }
+  #logo:hover {
+    transform: scale(1.1) translate(-69%, -60%);
+  }
+}
