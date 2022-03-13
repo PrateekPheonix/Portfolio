@@ -1,4 +1,4 @@
-import React, { useRef, useEffect, useState } from 'react'
+import React, { useRef, useEffect } from 'react'
 import styles from '../styles/About.module.css'
 import Image from 'next/image'
 import { gsap } from "gsap";
@@ -14,8 +14,8 @@ const IntroContent = () => {
 
 
     useEffect(() => {
-        gsap.from(content.current, { autoAlpha: 0, x: -100, delay: 0.9, duration: 1.2 });
-        gsap.from(photo.current, { autoAlpha: 0, x: 100, delay: 0.9, duration: 1.2 });
+        gsap.from(content.current, { autoAlpha: 0, x: -100, delay: 1, duration: 1.2 });
+        gsap.from(photo.current, { autoAlpha: 0, x: 100, delay: 1, duration: 1.2 });
         if (cursorSpan.current) {
             // typing animation
             const textArray = ["Full-Stack Web Developer", "Programmer", "Computer Science Engineer", "Keen Learner", "Student"];
@@ -55,7 +55,7 @@ const IntroContent = () => {
 
             if (textArray.length) setTimeout(type, newTextDelay + 250);
         }
-    }, [cursorSpan.current]);
+    }, []);
 
 
 
