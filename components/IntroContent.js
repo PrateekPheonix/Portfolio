@@ -1,21 +1,18 @@
 import React, { useRef, useEffect } from 'react'
 import styles from '../styles/About.module.css'
 import Image from 'next/image'
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/dist/ScrollTrigger"
-gsap.registerPlugin(ScrollTrigger);
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const IntroContent = () => {
 
-    const content = useRef()
-    const photo = useRef()
     const typedTextSpan = useRef()
     const cursorSpan = useRef()
 
 
     useEffect(() => {
-        gsap.from(content.current, { autoAlpha: 0, x: -100, delay: 1, duration: 1.2 });
-        gsap.from(photo.current, { autoAlpha: 0, x: 100, delay: 1, duration: 1.2 });
+        AOS.init({ duration: 2000 });
+
         if (cursorSpan.current) {
             // typing animation
             const textArray = ["Full-Stack Web Developer", "Programmer", "Computer Science Engineer", "Keen Learner", "Student"];
@@ -61,13 +58,13 @@ const IntroContent = () => {
 
 
     return (
-        <div className={styles.contentContainer}>
-            <div ref={content} className={styles.content}>
+        <div data-aos="fade-right" className={styles.contentContainer}>
+            <div className={styles.content}>
                 <p>Hi, My name is</p>
                 <h1>Prateek Niket</h1>
                 <p className={styles.ref}>I am a <span ref={typedTextSpan} className={styles.typedText}></span><span ref={cursorSpan} className={styles.cursor}>&nbsp;</span></p>
             </div>
-            <div ref={photo} className={styles.photo}>
+            <div data-aos="zoom-in-left" className={styles.photo}>
                 <Image id={styles.pfp} src="/static/media/pfp.jpeg" alt="Picture" width={370} height={370} />
             </div>
         </div>
