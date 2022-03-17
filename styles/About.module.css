@@ -16,7 +16,7 @@
   margin-left: 2.5%;
 }
 .headerIntro h1 {
-  font-size: 46px;
+  font-size: 48px;
   font-family: "Heebo", sans-serif;
   letter-spacing: 0.07em;
 }
@@ -28,9 +28,26 @@
   margin-left: -2% !important;
   border-radius: 10px;
   margin-top: -10px;
+  color: #edfffcbf;
 }
 
 .headerIntro h4:hover {
   cursor: pointer;
-  background-color: #edfffc21;
+  background-color: #edfffc2a;
+}
+
+.skills {
+  font-family: "Heebo", sans-serif;
+  margin-left: 7%;
+  margin-top: 8%;
+}
+
+.head {
+  letter-spacing: 0.02em;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.container hr {
+  width: 88%;
 }
