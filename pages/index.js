@@ -1,15 +1,15 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Index.module.css'
 
-export default function Home() {
+export default function Index() {
   return (
     <div className={styles.container}>
       <Head>
         <title>Prateek Niket</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
-      <Link href="/about">
+      <Link href="/home">
         <div id={styles.logo} className='svg-container'>
           <svg width="652" height="101" viewBox="0 0 652 101" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M67.1919 30.0083C67.1919 38.3603 64.3119 45.3203 58.5519 50.8883C52.8879 56.3603 44.1999 59.0963 32.4879 59.0963H13.1919V101H0.0878906V0.632278H32.4879C43.8159 0.632278 52.4079 3.36828 58.2639 8.84028C64.2159 14.3123 67.1919 21.3683 67.1919 30.0083ZM32.4879 48.2963C39.7839 48.2963 45.1599 46.7123 48.6159 43.5443C52.0719 40.3763 53.7999 35.8643 53.7999 30.0083C53.7999 17.6243 46.6959 11.4323 32.4879 11.4323H13.1919V48.2963H32.4879Z" stroke="#01F9C6" strokeWidth="5" />

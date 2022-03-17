@@ -1,6 +1,7 @@
 import React, { useRef, useEffect } from 'react'
-import styles from '../styles/About.module.css'
+import styles from '../styles/Home.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -11,7 +12,7 @@ const IntroContent = () => {
 
 
     useEffect(() => {
-        AOS.init({ duration: 2000 });
+        AOS.init({ duration: 2000, delay: 800 });
 
         if (cursorSpan.current) {
             // typing animation
@@ -63,6 +64,9 @@ const IntroContent = () => {
                 <p>Hi, My name is</p>
                 <h1>Prateek Niket</h1>
                 <p className={styles.ref}>I am a <span ref={typedTextSpan} className={styles.typedText}></span><span ref={cursorSpan} className={styles.cursor}>&nbsp;</span></p>
+                <Link href="/about">
+                    <p className={styles.more}>More About me</p>
+                </Link>
             </div>
             <div data-aos="zoom-in-left" className={styles.photo}>
                 <Image id={styles.pfp} src="/static/media/pfp.jpeg" alt="Picture" width={370} height={370} />
