@@ -1,7 +1,6 @@
 import Head from 'next/head'
 
 import IntroContent from '../components/IntroContent'
-import MiddleOne from '../components/MiddleOne'
 import Video from '../components/Video'
 import styles from '../styles/Home.module.css'
 

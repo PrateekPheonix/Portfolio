@@ -1,0 +1,36 @@
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #0a0a0a;
+  color: #edfffc;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-left: 7%;
+  margin-top: 4%;
+}
+.headerIntro {
+  width: 40%;
+  margin-left: 2.5%;
+}
+.headerIntro h1 {
+  font-size: 46px;
+  font-family: "Heebo", sans-serif;
+  letter-spacing: 0.07em;
+}
+
+.headerIntro h4 {
+  font-weight: 400;
+  width: fit-content !important;
+  padding: 8px 12px;
+  margin-left: -2% !important;
+  border-radius: 10px;
+  margin-top: -10px;
+}
+
+.headerIntro h4:hover {
+  cursor: pointer;
+  background-color: #edfffc21;
+}
