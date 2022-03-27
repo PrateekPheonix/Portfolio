@@ -54,6 +54,7 @@
   font-family: "Heebo", sans-serif;
   font-size: 72px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .content p {
@@ -110,6 +111,7 @@
     rgba(196, 196, 196, 0.12) 0px 4px 6px,
     rgba(196, 196, 196, 0.17) 0px 12px 13px,
     rgba(196, 196, 196, 0.09) 0px -3px 5px;
+  cursor: pointer;
 }
 
 .photo span {

@@ -62,15 +62,19 @@ const IntroContent = () => {
         <div data-aos="fade-right" className={styles.contentContainer}>
             <div className={styles.content}>
                 <p>Hi, My name is</p>
-                <h1>Prateek Niket</h1>
+                <Link href="/">
+                    <h1>Prateek Niket</h1>
+                </Link>
                 <p className={styles.ref}>I am a <span ref={typedTextSpan} className={styles.typedText}></span><span ref={cursorSpan} className={styles.cursor}>&nbsp;</span></p>
                 <Link href="/about">
                     <p className={styles.more}>More About me</p>
                 </Link>
             </div>
-            <div data-aos="zoom-in-left" className={styles.photo}>
-                <Image id={styles.pfp} src="/static/media/pfp.jpeg" alt="Picture" width={370} height={370} />
-            </div>
+            <Link href="/">
+                <div data-aos="zoom-in-left" className={styles.photo}>
+                    <Image id={styles.pfp} src="/static/media/pfp.jpeg" alt="Picture" width={370} height={370} />
+                </div>
+            </Link>
         </div>
     )
 }

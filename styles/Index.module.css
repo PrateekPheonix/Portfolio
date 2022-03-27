@@ -9,11 +9,8 @@
   top: 50%;
   transform: translate(-50%, -50%);
   transition: transform 0.3s;
-  cursor: pointer;
 }
-#logo:hover {
-  transform: scale(1.2) translate(-40%, -40%);
-}
+
 #logo svg {
   animation: fill 0.5s ease forwards 3.5s;
 }
@@ -88,8 +85,5 @@
   }
   #logo svg {
     width: 150%;
-  }
-  #logo:hover {
-    transform: scale(1.1) translate(-69%, -60%);
   }
 }
