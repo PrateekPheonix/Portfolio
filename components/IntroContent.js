@@ -4,6 +4,11 @@ import Image from 'next/image'
 import Link from 'next/link'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { BsGithub } from 'react-icons/bs';
+import { BsLinkedin } from 'react-icons/bs';
+import { RiInstagramFill } from 'react-icons/ri';
+import { IoMdMail } from 'react-icons/io';
+
 
 const IntroContent = () => {
 
@@ -66,6 +71,20 @@ const IntroContent = () => {
                     <h1>Prateek Niket</h1>
                 </Link>
                 <p className={styles.ref}>I am a <span ref={typedTextSpan} className={styles.typedText}></span><span ref={cursorSpan} className={styles.cursor}>&nbsp;</span></p>
+                <div className={styles.icons}>
+                    <Link href="https://github.com/PrateekPheonix">
+                        <BsGithub color='white' size='1.5em' />
+                    </Link>
+                    <Link href='https://www.linkedin.com/in/prateekniket/'>
+                        <BsLinkedin color='white' size='1.5em' />
+                    </Link>
+                    <Link href='https://www.instagram.com/bruhhhh.teek/'>
+                        <RiInstagramFill color='white' size='1.8em' />
+                    </Link>
+                    <Link href='mailto:prateekniket25@gmail.com'>
+                        <IoMdMail color='white' size='1.8em' />
+                    </Link>
+                </div>
                 <Link href="/about">
                     <p className={styles.more}>More About me</p>
                 </Link>

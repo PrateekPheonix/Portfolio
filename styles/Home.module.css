@@ -149,6 +149,18 @@
   cursor: pointer;
 }
 
+.icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.icons :nth-child(n) {
+  margin-right: 22px;
+  margin-bottom: 18px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 480px) {
   .contentContainer {
     margin-top: 30%;
