@@ -16,9 +16,9 @@ const Skills = () => {
                 <p className={styles.head}>Things I am good at !</p>
                 <hr />
             </div>
-            <div className={styles.category}>
+            <div data-aos="fade-down" data-aos-delay="2300" className={styles.category}>
                 <div className={styles.subcategory}>
-                    <h2 data-aos="zoom-in-down" data-aos-delay="2300">Web Development</h2>
+                    <h2 >Web Development</h2>
                     <SkillCard skill='HTML5' src='/static/media/skills/html5.png' />
                     <SkillCard skill='CSS3' src='/static/media/skills/css3.png' />
                     <SkillCard skill='JavaScript' src='/static/media/skills/javascript.png' />
@@ -34,7 +34,7 @@ const Skills = () => {
                     <SkillCard skill='MongoDB' src='/static/media/skills/mongodb.png' />
                 </div>
                 <div className={styles.subcategory}>
-                    <h2 data-aos="zoom-in-down" data-aos-delay="2300">Programming</h2>
+                    <h2>Programming</h2>
                     <SkillCard skill='C Language' src='/static/media/skills/c-programming.png' />
                     <SkillCard skill='C++ Language' src='/static/media/skills/c++.png' />
                     <SkillCard skill='Java' src='/static/media/skills/java.png' />
@@ -42,7 +42,7 @@ const Skills = () => {
                     <SkillCard skill='Dart' src='/static/media/skills/dart.png' />
                 </div>
                 <div className={styles.subcategory}>
-                    <h2 data-aos="zoom-in-down" data-aos-delay="2200">Tools/Platform</h2>
+                    <h2>Tools/Platform</h2>
                     <SkillCard skill='Git' src='/static/media/skills/git.png' />
                     <SkillCard skill='GitHub' src='/static/media/skills/github.png' />
                     <SkillCard skill='GitLab' src='/static/media/skills/gitlab.png' />

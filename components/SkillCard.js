@@ -12,7 +12,8 @@ const SkillCard = (props) => {
 
     return (
         <div>
-            <div className={styles.skillCard}>
+            <div data-aos="fade-down" data-aos-duration="800" data-aos-anchor-placement="center-bottom" data-aos-delay="0" data-aos-offset="-150"
+                className={styles.skillCard}>
                 <p>{props.skill}</p>
                 <Image id={styles.logo} src={props.src} alt="Picture" width={48} height={48} />
             </div>
@@ -21,3 +22,6 @@ const SkillCard = (props) => {
 }
 
 export default SkillCard
+
+// center-bottom
+// bottom-bottom
